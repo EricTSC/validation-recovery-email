@@ -5,6 +5,10 @@
 
 }
 
+.borda {
+    border: 2px solid #ff1010;
+}
+
 body {
     background-color: #2d2e32;
     color: #fff;
@@ -35,6 +39,13 @@ button:hover {
     transition: 1s ease;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .bloco1 {
     background-color: #121214;
     width: 80vw;
@@ -52,7 +63,6 @@ button:hover {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 .bloco1 p {
@@ -94,12 +104,19 @@ button:hover {
     margin-left: -12px;
 }
 
+#icon-insta {
+    width: 35px;
+    height: auto;
+    margin-top: 10px;
+}
+
 .emailCadastrado {
-    height: 40px;
+    height: 45px;
     width: 75vw;
-    max-width: 300px;
+    max-width: 350px;
+    margin: 7px 0px;
     border-radius: 10px;
-    background-color: #202024;
+    background-color: #1f1f1f;
     display: flex;
     flex-direction: column;
     padding: 5px 10px;
@@ -108,16 +125,52 @@ button:hover {
 
 .emailCadastrado label {
     font-size: 0.7rem;
-    color: #8f8f8f;
+    color: #646464;
 
 }
 
 .emailCadastrado input {
-    background-color: #202024;
+    background-color: #1f1f1f;
     height: 30px;
-    
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: #818181;
 }
 
+.campoSenha {
+    height: 45px;
+    width: 75vw;
+    max-width: 350px;
+    margin: 7px 0px;
+    border-radius: 10px;
+    background-color: #202024;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    box-shadow: none;
+}
+
+.campoSenha label {
+    font-size: 0.7rem;
+    color: #8f8f8f;
+
+}
+
+.campoSenha input {
+    background-color: #202024;
+    height: 30px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: #fff;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 
 @media screen and (min-width: 450px) { 
 
